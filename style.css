@@ -12,7 +12,7 @@ body {
 
 .blog-card {
     background-color: white;
-    max-width: 90%;
+    max-width: 400pt;
     margin: 24pt auto;
     filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.03));
     border-radius: 4pt;
@@ -58,4 +58,17 @@ p {
 
 .author img {
     margin-right: 12pt;
+}
+
+.btn-primary {
+    background-color: #3E7BFA;
+    padding: 10pt;
+    border-radius: 4pt;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-primary:hover {
+    background-color: #1843a0;
 }
