@@ -8,45 +8,48 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="app.js"></script>
 </head>
 <body>
-    <div class="blog-card">
-        <div class="header-bg">
-            <img src="img/Header.png">
-        </div>
-        <div class="body">
-            <h4>Figma tips and tricks</h4>
-            <p>I started this document a while ago for the design team I’m on at Asurion, but I thought it would be helpful for oth...</p>
-        </div>
-        <div class="footer">
-            <div class="author">
-                <img src="img/TomJ.png">
-                <p>Tom Johnson</p>
+    <div id="wrapper">
+        <div class="blog-card">
+            <div class="header-bg">
+                <img src="img/Header.png">
             </div>
-            <p>8 min read</p>
-        </div>
-    </div>
-
-    <div class="blog-card">
-        <div class="header-bg">
-            <img src="img/Header2.png">
-        </div>
-        <div class="body">
-            <h4>How to be an Irreplaceable Designer</h4>
-            <p>We all are talented, which means we excel at something. Lucky people are the ones who recognize their ...</p>
-        </div>
-        <div class="footer">
-            <div class="author">
-                <img src="img/TomJ.png">
-                <p>Tom Johnson</p>
+            <div class="body">
+                <h4>Figma tips and tricks</h4>
+                <p>I started this document a while ago for the design team I’m on at Asurion, but I thought it would be helpful for oth...</p>
             </div>
-            <p>8 min read</p>
+            <div class="footer">
+                <div class="author">
+                    <img src="img/TomJ.png">
+                    <p>Tom Johnson</p>
+                </div>
+                <p>8 min read</p>
+            </div>
         </div>
-    </div>
-    <input type="text" id="title" placeholder="Title...">
-    <input type="text" id="article" placeholder="Article...">
-    <a class="btn-primary">Add new blog post</a>
 
+        <div class="blog-card">
+            <div class="header-bg">
+                <img src="img/Header2.png">
+            </div>
+            <div class="body">
+                <h4>How to be an Irreplaceable Designer</h4>
+                <p>We all are talented, which means we excel at something. Lucky people are the ones who recognize their ...</p>
+            </div>
+            
+            <div class="footer">
+                <div class="author">
+                    <img src="img/TomJ.png">
+                    <p>Tom Johnson</p>
+                </div>
+                <p>8 min read</p>
+            </div>
+        </div>
+
+        <input type="text" id="txt" name="tytul" placeholder="wpisz tytul">
+        <a class="btn-primary" onclick="addArticle()">Add new blog post</a>
+
+    </div>
+<script src="app.js"></script>
 </body>
 </html>
