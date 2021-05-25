@@ -6,16 +6,25 @@ function addArticle(){
     document.body.appendChild(article);
 
     //@ts-ignore
-    let txt = document.getElementById('txt').value;
-
+    let articleTitle = document.getElementById('articleTitle').value;
     let header = document.createElement('h4');
-    header.innerHTML = txt;
+    header.innerHTML = articleTitle;
 
     article.append(header);
 
+    //@ts-ignore
+    let articleDescription = document.getElementById('articleDescription').value;
     let description = document.createElement('p');
-    description.innerHTML = 'Tak to ma działac?';
+    description.innerHTML = articleDescription;
 
     article.append(description);
+
+    let remove = document.createElement('a');
+    remove.classList.add('btn-delete');
+    remove.innerHTML = "Remove";
+    remove.onclick = function removeArticle (){
+        document.body.removeChild(article);
+    }
+    article.append(remove);
 
 }

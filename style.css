@@ -19,6 +19,16 @@ body {
     padding: 24pt;
 }
 
+.article {
+    background-color: white;
+    margin: 24pt auto;
+    filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.03));
+    border-radius: 4pt;
+    padding: 24pt;
+    max-width: 400pt;
+    display: flex;
+}
+
 .blog-card p {
     color: #828282;
     margin-top: 8pt;
@@ -69,6 +79,21 @@ p {
     transition: 0.5s;
 }
 
+.btn-delete {
+    background-color: #a81818;
+    padding: 10pt;
+    border-radius: 4pt;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    display: inline-block;
+    margin-top: 16pt;
+}
+
 .btn-primary:hover {
     background-color: #1843a0;
+}
+
+.btn-delete:hover {
+    background-color: #721212;
 }
